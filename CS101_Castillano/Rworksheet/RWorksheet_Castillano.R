@@ -5,6 +5,7 @@ length(age)
 1 / age
 new_age <- c(age, 0, age)
 length(new_age)
+#Explanation: 34 (original) + 1 (zero) + 34 (again) = 69
 sort(age)
 min(age)
 max(age)
@@ -12,18 +13,21 @@ data <- c(2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5, 2.3, 2.5, 2.3, 2.4, 2.7)
 length(data)
 double_data <- data * 2
 double_data
+#it doubles the value in data
 seq1 <- seq(1, 100)
 seq2 <- seq(20, 60)
 mean(seq2)
 sum(seq(51, 91))
 seq3 <- seq(1, 1000)
 head(seq3, 10)
+#How many data points from 8.1 to 8.4? 8.1: 100, 8.2: 41, 8.3: 1 (mean is one value), 8.4: 1 (sum is one value), Total: 100 + 41 + 1 + 1 = 143
 Filter(function(i) { all(i %% c(3, 5, 7) != 0) }, seq(1, 100))
 rev(seq(1, 100))
 nums <- 1:24
 multiples <- nums[nums %% 3 == 0 | nums %% 5 == 0]
 multiples
 sum(multiples)
+#How many data points from 10 to 11? Q10: 100 values, Q11: 11 values
 {
   x <- 0
   x + 5
@@ -33,10 +37,12 @@ score[2]
 score[3]
 a <- c(1, 2, NA, 4, NA, 6, 7)
 print(a, na.print = "-999")
+#Explanation: Actual values remain NA. Only printed as -999.
 x <- c(2, 3, 4)
 class(x)           
 class(x) <- "foo"
-class(x)          
+class(x)  
+#from "numeric" to "foo"
 name <- readline(prompt = "Input your name: ")
 age <- readline(prompt = "Input your age: ")
 print(paste("My name is", name, "and I am", age, "years old."))
